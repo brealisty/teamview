@@ -25,7 +25,12 @@
             $('.share-bottom').toggleClass('active-share-bottom');
             return false;
         });
+        $('.contact-us').click(function () {
+            $('.share-bottom').toggleClass('active-share-bottom');
+            $('.menu-top').removeClass('show-menus');
+            $('.menu-wrapper-background').fadeOut(250);
 
+        });
         $('.close-share-bottom').click(function () {
             $('.share-bottom').removeClass('active-share-bottom');
             return false;
